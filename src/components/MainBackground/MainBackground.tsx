@@ -17,7 +17,7 @@ const StyledMainBackground = styled.div.attrs<StyledProps>(({x, y}) => ({
     backgroundPositionY: y
   }
 }))<StyledProps>`
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
