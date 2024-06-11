@@ -1,0 +1,1 @@
+export { AnimText } from './AnimText';
