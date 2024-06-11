@@ -25,14 +25,14 @@ const AboutMe: FC<Props> = () => {
         onPrintEnd={increaseCurrent}
       >
         {current > 0 && (
-          <AnimText interval={10} onPrintEnd={increaseCurrent}>
+          <AnimText interval={5} onPrintEnd={increaseCurrent}>
             I am enthusiast of programming, autodidact with great passion for
             good quality code.
           </AnimText>
         )}
 
         {current > 1 && (
-          <AnimText interval={10} onPrintEnd={increaseCurrent}>
+          <AnimText interval={5} onPrintEnd={increaseCurrent}>
             Since 2012, I have been working on Web-Dev creating
             web applications, websites and games, constantly improving my skills.
             Recently I have been focusing mainly on modern technologies based on
@@ -45,24 +45,29 @@ const AboutMe: FC<Props> = () => {
           <>
             <AnimText
               style={{display: 'inline-block'}}
-              interval={20}
+              interval={10}
               as='a'
               href="https://www.linkedin.com/in/jakub-gawryl/"
               target="_blank"
-              onPrintEnd={increaseCurrent}
             >
               let's meet on LinkedIn
-            </AnimText>
-            <p style={{marginBottom: 0}}>or</p>
+            </AnimText>{', '}
             <AnimText
-              style={{display: 'inline-block'}}
-              interval={20}
+              style={{display: 'block'}}
+              interval={10}
               as='a'
               href="https://github.com/jakub-gawryl/"
               target="_blank"
-              onPrintEnd={increaseCurrent}
             >
               check out my GitHube
+            </AnimText>{' '}
+            <AnimText
+              style={{display: 'block'}}
+              interval={10}
+              as='p'
+              onPrintEnd={increaseCurrent}
+            >
+              or email me at gawryl.jakub [monkey] gmail.com
             </AnimText>
           </>
         )}
