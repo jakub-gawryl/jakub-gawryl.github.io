@@ -80,13 +80,12 @@ const AboutMe: FC<Props> = () => {
           <AnimText
             interval={20}
             as='small'
-            onPrintEnd={increaseCurrent}
             style={{
               display: 'block',
               marginTop: '20px'
             }}
           >
-            &gt; spacecraft log entry, June 2004
+            &gt; update: June 2004 | image: Reid Wiseman, NASA (images.nasa.gov, id: iss040e098961)
           </AnimText>
         )}
       </GlassWindow>
