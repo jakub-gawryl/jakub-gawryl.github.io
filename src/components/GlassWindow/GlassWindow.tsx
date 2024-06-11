@@ -51,16 +51,6 @@ const StyledGlassWindow = styled.div`
       }
     }
 
-    @media screen and (max-width: 640px) {
-      font-size: 14px;
-
-      &__title {
-        font-size: 15px;
-        padding: 10px 24px;
-        line-height: 1.25em;
-      }
-    }
-
     &__content {
       line-height: 1.5em;
       padding: 40px;
@@ -69,6 +59,21 @@ const StyledGlassWindow = styled.div`
       border-radius: 6px;
       box-shadow: 0 0 32px rgba(0, 214, 200, 0.5);
       backdrop-filter: blur(5.3px);
+    }
+
+    @media screen and (max-width: 780px) {
+      font-size: 14px;
+      
+
+      &__title {
+        font-size: 15px;
+        padding: 10px 24px;
+        line-height: 1.25em;
+      }
+
+      &__content {
+        padding: 20px;
+      }
     }
   }
 `;

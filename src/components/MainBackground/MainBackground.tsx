@@ -26,7 +26,7 @@ const StyledMainBackground = styled.div.attrs<StyledProps>(({x, y}) => ({
   background: url(/img/bg.png);
   font-family: sans-serif;
   color: #fff;
-  overflow: hidden;
+  overflow-x: hidden;
 `;
 
 const MainBackground: FC<Props> = ({ children }) => {

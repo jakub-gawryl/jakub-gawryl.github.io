@@ -12,7 +12,7 @@ const StyledAboutMe = styled.div`
   z-index: 100;
   max-width: 800px;
 
-  @media screen and (max-width: 640px) {
+  @media screen and (max-width: 780px) {
     margin: 36px
   }
 `;
