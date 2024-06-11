@@ -11,6 +11,10 @@ const StyledAboutMe = styled.div`
   margin: 100px;
   z-index: 100;
   max-width: 800px;
+
+  @media screen and (max-width: 640px) {
+    margin: 36px
+  }
 `;
 
 const AboutMe: FC<Props> = () => {
@@ -21,7 +25,7 @@ const AboutMe: FC<Props> = () => {
   return (
     <StyledAboutMe>
       <GlassWindow
-        title="Greetings from Jakub Gawryl, senior software/fullstack developer."
+        title="Greetings from Jakub Gawryl, senior frontend/fullstack developer."
         onPrintEnd={increaseCurrent}
       >
         {current > 0 && (
@@ -33,7 +37,7 @@ const AboutMe: FC<Props> = () => {
 
         {current > 1 && (
           <AnimText interval={5} onPrintEnd={increaseCurrent}>
-            Since 2012, I have been working on Web-Dev creating
+            Since 2012, I have been working on web-dev creating
             web applications, websites and games, constantly improving my skills.
             Recently I have been focusing mainly on modern technologies based on
             JavaScript/Typescript (Node.js, Express, MongoDB), but equally well
@@ -67,7 +71,7 @@ const AboutMe: FC<Props> = () => {
               as='p'
               onPrintEnd={increaseCurrent}
             >
-              or email me at gawryl.jakub [monkey] gmail.com
+              or email me at gawryl.jakub (at) gmail.com
             </AnimText>
           </>
         )}

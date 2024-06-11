@@ -35,7 +35,7 @@ const StyledGlassWindow = styled.div`
       padding: 2px 16px;
       color: #fff;
       font-size: 18px;
-      background:  rgb(22, 139, 158);
+      background: rgba(22, 139, 158, 0.85);
       margin-bottom: 12px;
 
       &::before {
@@ -47,7 +47,17 @@ const StyledGlassWindow = styled.div`
         width: 40px;
         height: 6px;
         border-radius: 2px;
-        background: rgb(22, 139, 158);
+        background: rgba(22, 139, 158, 0.85);
+      }
+    }
+
+    @media screen and (max-width: 640px) {
+      font-size: 14px;
+
+      &__title {
+        font-size: 15px;
+        padding: 10px 24px;
+        line-height: 1.25em;
       }
     }
 
